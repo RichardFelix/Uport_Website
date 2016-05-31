@@ -1,0 +1,23 @@
+{
+  "name": "uport",
+  "version": "1.0.0",
+  "description": "uport website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardFelix/Uport_Website.git"
+  },
+  "author": "Richard C Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardFelix/Uport_Website/issues"
+  },
+  "homepage": "https://github.com/RichardFelix/Uport_Website#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "pug": "^2.0.0-alpha8"
+  }
+}
