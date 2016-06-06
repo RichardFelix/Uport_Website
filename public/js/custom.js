@@ -3,7 +3,7 @@
 ******************************/
 $(function() {
     "use strict";
-    $('.scroll' || '#scroll').bind('click', function(event) {
+    $('.scroll').bind('click', function(event) {
         var $anchor = $(this);
         var headerH = $('#navigation-menu').outerHeight();
         $('html, body').stop().animate({
