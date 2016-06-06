@@ -1,3 +1,13 @@
+//***********************
+//       variables
+//************************/
+$fontFamily: Raleway;
+
+/************************
+        Fonts
+************************/
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,700);
+
 // /************************
 //         imports
 // ************************/
@@ -9,4 +19,4 @@
 @import 'partials/features';
 @import 'partials/connect';
 @import 'partials/quote';
-@import 'partials/footer';
+@import 'partials/footer'; 
