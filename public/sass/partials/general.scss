@@ -11,6 +11,14 @@ body{
   font-family: $fontFamily;
 }
 
+.lineHeight{
+  line-height: 1.7; 
+}
+
+.nopadding{
+  padding: 0;
+}
+
 .padding{
   padding: 10% 10%;
 }
@@ -21,4 +29,23 @@ body{
 
 .paddingTopBot{
   padding: 4% 0;
+}
+
+//// testing for text center ///
+
+.textPadding{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textContainer{
+  height: 430px;
+  line-height: 400px;
+}
+
+.textCenter{
+  vertical-align: middle;
+  display: inline-block;
 }
