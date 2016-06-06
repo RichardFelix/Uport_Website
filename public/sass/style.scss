@@ -2,11 +2,13 @@
 //       variables
 //************************/
 $fontFamily: Raleway;
+$BrandText: Michroma;
 
 /************************
         Fonts
 ************************/
 @import url(https://fonts.googleapis.com/css?family=Raleway:500,700);
+@import url(https://fonts.googleapis.com/css?family=Michroma);
 
 // /************************
 //         imports
@@ -20,4 +22,4 @@ $fontFamily: Raleway;
 @import 'partials/features';
 @import 'partials/connect';
 @import 'partials/quote';
-@import 'partials/footer';
+@import 'partials/footer'; 
