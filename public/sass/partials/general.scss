@@ -13,41 +13,18 @@ body{
   line-height: 1.7;
 }
 
-// .lineHeight{
-//   line-height: 1.7;
-// }
-
 .nopadding{
   padding: 0;
 }
 
 .padding{
-  padding: 10% 10%;
+  padding: 0% 10%;
 }
 
-.paddingSmall{
-  padding: 10% 5%;
+.margin{
+  margin: 15% 0;
 }
 
 .paddingTopBot{
   padding: 4% 0;
-}
-
-//// testing for text center ///
-
-.textPadding{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.textContainer{
-  height: 430px;
-  line-height: 400px;
-}
-
-.textCenter{
-  vertical-align: middle;
-  display: inline-block;
 }
