@@ -26,17 +26,21 @@ $(function(){
 /************************************************
     Fixing margins of col-md-6 boxes to match
 ************************************************/
-var picArr = [ '.pic', '.pic1', '.pic2' ],
-    wordArr = [ '.words', 'words1', '.words2' ],
-    wordMarginArr = [];
+var picArr = [ '.pic', '.pic1', '.pic2', '.pic3', '.pic4' ],
+    wordArr = [ '.words', 'words1', '.words2', '.words3', '.words4' ],
+    wordMarginArr = [],
+    picArrLength = picArr.length;
 
-for(var x = 0; x < picArr.length; x++){
+// pushing the margin height to array after getting even margins
+for(var x = 0; x < picArrLength; x++){
   var result = ( $(picArr[x]).height() - $(wordArr[x]).height() ) / 2.1;
   wordMarginArr.push( result );
 }
 
 console.log(wordMarginArr);
 
+// if the margin is positive then change the margins to the size
+// from the wordMarginArr value
 function fixMargins(){
   var wordMarginArrLength = wordMarginArr.length;
 
