@@ -1,7 +1,7 @@
 /******************************
       Scroll Navigation
 ******************************/
-$(function() {
+$(function(){
     "use strict";
     $('.scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -56,6 +56,6 @@ $(document).ready(function(){
   fixMargins();
 });
 
-$(window).on('resize', function() {
+$(window).on('resize', function(){
   fixMargins();
 });
