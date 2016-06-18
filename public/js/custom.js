@@ -29,18 +29,17 @@ $(function(){
 var picArr = [ '.pic', '.pic1', '.pic2', '.pic3', '.pic4' ],
     wordArr = [ '.words', '.words1', '.words2', '.words3', '.words4' ],
     wordMarginArr = [],
-    picArrLength = picArr.length;
-
-// pushing the margin height to array after getting even margins
-for(var x = 0; x < picArrLength; x++){
-  var result = ( $(picArr[x]).height() - $(wordArr[x]).height() ) / 2.1;
-  wordMarginArr.push( result );
-}
+    picArrLength = picArr.length,
+    wordMarginArrLength = picArrLength;
 
 // if the margin is positive then change the margins to the size
 // from the wordMarginArr value
 function fixMargins(){
-  var wordMarginArrLength = wordMarginArr.length;
+  // pushing the margin height to array after getting even margins
+  for(var x = 0; x < picArrLength; x++){
+    var result = ( $(picArr[x]).height() - $(wordArr[x]).height() ) / 2.1;
+    wordMarginArr.push( result );
+  }
 
   for(var x = 0; x < wordMarginArrLength; x++){
     if( wordMarginArr[x] > 0 ){
@@ -54,6 +53,15 @@ function fixMargins(){
 
 $(document).ready(function(){
   fixMargins();
+  // $("#3d").interactive_3d({
+  //   frames: 38,
+  //   cursor: 'move',
+  //   entrance: true,
+  //   touchSupport: true,
+  //   loading: 'Loading..',
+  //   autoPlay: false,
+  //   preloadImages: true
+  //   });
 });
 
 $(window).on('resize', function(){
