@@ -53,15 +53,15 @@ function fixMargins(){
 
 $(document).ready(function(){
   fixMargins();
-  // $("#3d").interactive_3d({
-  //   frames: 38,
-  //   cursor: 'move',
-  //   entrance: true,
-  //   touchSupport: true,
-  //   loading: 'Loading..',
-  //   autoPlay: false,
-  //   preloadImages: true
-  //   });
+  $("#3d").interactive_3d({
+    frames: 61,
+    cursor: 'move',
+    entrance: true,
+    touchSupport: true,
+    loading: 'Loading..',
+    autoPlay: false,
+    preloadImages: true
+    });
 });
 
 $(window).on('resize', function(){
