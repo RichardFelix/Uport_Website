@@ -67,3 +67,9 @@ $(document).ready(function(){
 $(window).on('resize', function(){
   fixMargins();
 });
+
+/* ------------------------------------- */
+/*  Newsletter ........................ */
+/* ------------------------------------- */
+
+$("#notifyMe").notifyMe();

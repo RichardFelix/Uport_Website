@@ -1,0 +1,26 @@
+section#contact.container-fluid
+
+  .row
+    .col-md-12.text-center
+      .contactPadding
+        h1
+          strong Find out more
+          
+        // Newsletter Form
+        #subscribe
+            form#notifyMe(action='php/notify-me.php', method='POST')
+              .form-group
+                .controls
+                  // Field
+                  input#mail-sub.form-control.email.srequiredField(type='text', name='email', placeholder='Click here to write your email', onfocus="this.placeholder = ''", onblur="this.placeholder = 'Click here to write your email'")
+                  // Spinner top left during the submission
+                  i.fa.fa-spinner.opacity-0
+                  // Button
+                  button.btn.btn-lg.submit Get notified
+                  | &#x9;&#x9;                            
+                  .clear
+            // Answer for the newsletter form is displayed in the next div, do not remove it.
+            .block-message
+              .message
+                p.notify-valid
+          // /. Newsletter Form
