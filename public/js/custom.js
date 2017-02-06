@@ -1,3 +1,19 @@
+/****************************
+    nReady / 3D Rotation
+****************************/
+$(document).ready(function(){
+  fixMargins();
+  $("#3d").interactive_3d({
+    frames: 61,
+    cursor: 'move',
+    entrance: true,
+    touchSupport: true,
+    loading: '<img src="img/white/black_1.png"/>',
+    autoPlay: false,
+    preloadImages: true
+    });
+});
+
 /******************************
       Scroll Navigation
 ******************************/
@@ -50,19 +66,6 @@ function fixMargins(){
     }
   }
 }
-
-$(document).ready(function(){
-  fixMargins();
-  $("#3d").interactive_3d({
-    frames: 61,
-    cursor: 'move',
-    entrance: true,
-    touchSupport: true,
-    loading: 'Loading..',
-    autoPlay: false,
-    preloadImages: true
-    });
-});
 
 $(window).on('resize', function(){
   fixMargins();
