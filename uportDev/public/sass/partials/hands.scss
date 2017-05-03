@@ -1,0 +1,34 @@
+/************************
+      Hands
+************************/
+$height: 500px;
+
+#hands{
+  height: $height;
+  background-color: #00071a;
+
+  .handsPic{
+    height: $height;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 40em) {
+    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+      .handsPic{
+        background-attachment: fixed;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:770px){
+  .handsPic{
+    background: url('../img/hands.jpg') no-repeat center;
+  }
+}
+
+@media only screen and (max-width:769px){
+  .handsPic{
+    background: url('../img/hands-sm.png') no-repeat center;
+  }
+}
